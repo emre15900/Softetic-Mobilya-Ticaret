@@ -1,0 +1,73 @@
+.product-details-tab-area {
+    margin: 60px 0 !important;
+    border: 1px solid #B6B6B6 !important;
+    overflow: hidden !important;
+  }
+   .product-details-tab-area ul > li {
+    margin: -1px !important;
+    display: inline-block !important;
+    padding: 10px 0 !important;
+    background: #070707 !important;
+    -webkit-transition: all 0.5s ease-out !important;
+    -moz-transition: all 0.5s ease-out !important;
+    -ms-transition: all 0.5s ease-out !important;
+    -o-transition: all 0.5s ease-out !important;
+    transition: all 0.5s ease-out !important;
+  }
+  @media only screen and (max-width: 479px) {
+     .product-details-tab-area ul > li {
+      display: block !important;
+      padding: 0 !important;
+    }
+  }
+   .product-details-tab-area ul > li a {
+    color: #FFFFFF !important;
+    padding: 12px 30px !important;
+    text-transform: uppercase !important;
+    font-weight: 500 !important;
+    -webkit-transition: all 0.5s ease-out !important;
+    -moz-transition: all 0.5s ease-out !important;
+    -ms-transition: all 0.5s ease-out !important;
+    -o-transition: all 0.5s ease-out !important;
+    transition: all 0.5s ease-out !important;
+  }
+  @media only screen and (max-width: 479px) {
+     .product-details-tab-area ul > li a {
+      display: block !important;
+    }
+  }
+   .product-details-tab-area ul > li:hover {
+    background: transparent !important;
+    -webkit-transition: all 0.5s ease-out !important;
+    -moz-transition: all 0.5s ease-out !important;
+    -ms-transition: all 0.5s ease-out !important;
+    -o-transition: all 0.5s ease-out !important;
+    transition: all 0.5s ease-out !important;
+  }
+   .product-details-tab-area ul > li:hover a {
+    color: #111111 !important;
+    -webkit-transition: all 0.5s ease-out !important;
+    -moz-transition: all 0.5s ease-out !important;
+    -ms-transition: all 0.5s ease-out !important;
+    -o-transition: all 0.5s ease-out !important;
+    transition: all 0.5s ease-out !important;
+  }
+   .product-details-tab-area ul .active {
+    background: transparent !important;
+  }
+   .product-details-tab-area ul .active a {
+    color: #111111 !important;
+    text-decoration: none !important;
+  }
+   .product-details-tab-area .tab-content {
+    padding: 35px 35px 15px 35px !important;
+  }
+
+.bilgi{
+    padding: 7px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(114, 255, 114) ) ;
+    font-weight: 550;
+    letter-spacing: 0.5px;
+    border-radius: 10px;
+}
+

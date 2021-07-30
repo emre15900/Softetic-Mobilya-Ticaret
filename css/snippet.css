@@ -1,0 +1,362 @@
+.wizard {
+    margin: 20px auto;
+    background: #fff;
+}
+
+    .wizard .nav-tabs {
+        position: relative;
+        margin: 40px auto;
+        margin-bottom: 0;
+        border-bottom-color: #e0e0e0;
+    }
+
+    .wizard > div.wizard-inner {
+        position: relative;
+    }
+
+.connecting-line {
+    height: 2px;
+    background: #e0e0e0;
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+}
+
+.wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
+    color: #555555;
+    cursor: default;
+    border: 0;
+    border-bottom-color: transparent;
+}
+
+span.round-tab {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    border-radius: 100px;
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 25px;
+}
+span.round-tab i{
+    color:#555555;
+}
+.wizard li.active span.round-tab {
+    background: #fff;
+    border: 2px solid black;
+    
+}
+.wizard li.active span.round-tab i{
+    color: black;
+}
+
+span.round-tab:hover {
+    color: #333;
+    border: 2px solid #333;
+}
+
+.wizard .nav-tabs > li {
+    width: 25%;
+}
+
+.wizard li:after {
+    content: " ";
+    position: absolute;
+    left: 46%;
+    opacity: 0;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 5px solid transparent;
+    border-bottom-color: black;
+    transition: 0.1s ease-in-out;
+}
+
+.mavicizgi li.active:after {
+    content: " ";
+    position: absolute;
+    left: 46%;
+    opacity: 1;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 10px solid transparent;
+    border-bottom-color: black;
+}
+
+.wizard .nav-tabs > li a {
+    width: 70px;
+    height: 70px;
+    margin: 20px auto;
+    border-radius: 100%;
+    padding: 0;
+}
+
+    .wizard .nav-tabs > li a:hover {
+        background: transparent;
+    }
+
+.wizard .tab-pane {
+    position: relative;
+    padding-top: 50px;
+}
+
+.wizard h3 {
+    margin-top: 0;
+}
+
+@media( max-width : 585px ) {
+
+    .wizard {
+        width: 90%;
+        height: auto !important;
+    }
+
+    span.round-tab {
+        font-size: 16px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .wizard .nav-tabs > li a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .wizard li.active:after{
+        content: " ";
+        position: absolute;
+        left: 35%;
+    }
+}
+
+/* Ödeme Sepet Kısmı*/
+.odemeinp{
+    max-width: 50px;
+}
+.odemediv{
+    display: inline-block !important;
+}
+
+ .table>thead>tr>td{
+    padding: 0px !important;
+}
+.tablokenari{
+    border: solid 2px #e1e2e3;
+}
+#siparisozeti{
+    border: solid 1px #e1e2e3;
+    padding: 10px;
+}
+.endof{
+    display: inline-flex;
+    float: right;
+    clear: both;
+}
+.noblock{
+    display: inline-block;
+}
+.geneltoplamhr{
+    border-top: 2px solid #d3d4d4;
+}
+
+@media only screen and (min-width: 970px){
+    .odemelerkismi{
+        margin-right: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .order-details-summery li {
+        border-right: 0px !important;
+    }
+}
+
+#comp{
+    margin-bottom: 20px;
+}
+.basarili{
+    margin-bottom: 20px;
+}
+.yeniadres{
+    border: 1px solid #e1e2e3;
+}
+
+/* POPUP PENCERESİ */
+
+.popup-container {
+    display: inline-flex;
+  }
+  .popup-container .button {
+    height: 40px;
+    line-height: 40px;
+    background: black;
+    padding: 0 15px;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .popup-container .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms all;
+  }
+  .popup-container .popup > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  .popup-container .popup .inner {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    min-width: 300px;
+    box-sizing: border-box;
+    transition: 400ms all;
+    z-index: 10;
+    max-height: 100%;
+    overflow: auto;
+  }
+  .popup-container .popup .inner .title {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    position: sticky;
+    top: 0;
+    background: #fff;
+  }
+  .popup-container .popup .inner .title h6 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .popup-container .popup .inner .title label {
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+  }
+  .popup-container .popup .inner .title label:hover {
+    color: #222;
+  }
+  .popup-container .popup .inner .content {
+    padding: 5px 15px 15px;
+  }
+  .popup-container .popup .inner .content ul li {
+    margin-bottom: 15px;
+  }
+  .popup-container .popup .inner .content ul li:last-child {
+    margin-bottom: 0;
+  }
+  .popup-container .popup .inner .content ul li input {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    font-size: 12px;
+  }
+  .popup-container .popup .inner .content ul li input:focus {
+    outline: 0;
+    border-color: black;
+  }
+  .popup-container .popup .inner .content ul li button {
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    background: black;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .popup-container .popup .inner .content p {
+    font-size: 13px;
+    line-height: 130%;
+    margin-bottom: 15px;
+  }
+  .popup-container .popup .inner .content p:last-child {
+    margin-bottom: 0;
+  }
+  .popup-container .popup .inner .content .close-btn {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+  }
+  .popup-container .popup .inner .content .close-btn label {
+    background: rgba(0, 0, 0, 0.05);
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    font-size: 13px;
+    color: #444;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .popup-container .popup .inner .content .close-btn label:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .popup-container > input {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+  }
+  .popup-container > input:checked + .popup {
+    opacity: 1;
+    visibility: visible;
+  }
+  .popup-container > input:checked + .popup .inner {
+    top: 50%;
+  }
+  @media only screen and (max-width: 900px){
+    .popup-container > input:checked + .popup .inner {
+        top: 45%;
+        bottom: 1%;
+      }
+}
+
+  #ayniadres{
+    display: block;
+  }
+  .ayniadres:checked + #ayniadres{
+    display: none;
+  }
+
+
+  @media only screen and (max-width: 900px){
+    .popup-container .popup .inner .content{
+        max-height: 100px !important;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 990px){
+  #siparisozeti{
+    margin-top: 200px;
+    margin-bottom: 20px;
+  }
+}
